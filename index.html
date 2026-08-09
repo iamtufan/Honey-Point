@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey Point — 100% Natural Raw Honey Direct From Beekeepers</title>
+    <meta name="description"
+        content="Experience the authentic taste of pure, raw, unprocessed honey collected directly from the forests of Sundarban. 100% natural, chemical-free honey delivered to your doorstep.">
+    <meta name="keywords"
+        content="Sundarban honey, pure honey, organic honey, raw honey, natural honey, wild honey, Sundarban forest honey">
+    <meta name="author" content="Sundarban Pure Honey">
+    <link rel="canonical" href="https://sundarbanhoney.com/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sundarban Pure Honey — 100% Natural Raw Honey">
+    <meta property="og:description"
+        content="Pure, raw, unprocessed honey from the forests of Sundarban. Direct from beekeepers to your doorstep.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sundarbanhoney.com/">
+    <meta property="og:image" content="./assets/1Lhoney.jpeg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sundarban Pure Honey — 100% Natural Raw Honey">
+    <meta name="twitter:description" content="Pure, raw, unprocessed honey from the forests of Sundarban.">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sundarban Pure Honey",
+        "description": "100% Pure, Raw, Unprocessed honey from the forests of Sundarban",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Sundarban, Gosaba",
+            "postalCode": "743370",
+            "addressCountry": "IN"
+        },
+        "telephone": "+919564846891",
+        "email": "honeypoint26@gmail.com"
+    }
+    </script>
+    <link rel="icon" type="image/png" href="./assets/HP_Logo1.png">
+
+    <!-- Preload Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#F4B400', dark: '#D97706' },
+                        secondary: '#D97706',
+                        accent: '#FFD54F',
+                        honey: { 50: '#FFFDF7', 100: '#FFF8E7', 200: '#FFE6A0', 300: '#FFD54F', 400: '#F4B400', 500: '#D97706', 600: '#B45309' },
+                        cream: '#FFFDF7',
+                        forest: '#355E3B',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-poppins">
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Floating Bee -->
+    <div class="floating-bee" id="floatingBee" style="top:20%; left:5%;">🐝</div>
+
+    <!-- ═══════════════════════════════════════════
+         MARQUEE TOP BAR
+         ═══════════════════════════════════════════ -->
+    <div class="marquee-bar" id="marqueeBar">
+        <div class="marquee-track">
+            <span class="marquee-item">🍯 100% Pure Sundarban Honey</span>
+            <span class="marquee-item">🚚 Free Delivery on Selected Orders</span>
+            <span class="marquee-item">🌿 Direct from Beekeepers</span>
+            <span class="marquee-item">✨ Fresh Collection</span>
+            <span class="marquee-item">⏰ Limited Time Offer</span>
+            <span class="marquee-item">📱 Order Now on WhatsApp: +91 9564846891</span>
+            <span class="marquee-item">🍯 100% Pure Sundarban Honey</span>
+            <span class="marquee-item">🚚 Free Delivery on Selected Orders</span>
+            <span class="marquee-item">🌿 Direct from Beekeepers</span>
+            <span class="marquee-item">✨ Fresh Collection</span>
+            <span class="marquee-item">⏰ Limited Time Offer</span>
+            <span class="marquee-item">📱 Order Now on WhatsApp: +91 9564846891</span>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+         STICKY HEADER
+         ═══════════════════════════════════════════ -->
+    <header class="site-header has-marquee" id="siteHeader">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo" aria-label="Sundarban Pure Honey Home">
+                <img src="./assets/HP_Logo1.png" alt="Sundarban Pure Honey Logo">
+                <span class="header-logo-text">Honey Point</span>
+            </a>
+
+            <nav class="header-nav" aria-label="Main Navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="shop.html">Shop</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="dark-toggle" id="darkToggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="shop.html" class="header-cta">
+                    <i class="fas fa-shopping-bag"></i> Shop Now
+                </a>
+            </div>
+
+            <button class="hamburger" id="hamburger" aria-label="Open Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Skip to Content -->
+    <a href="#main-content"
+        class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[99999] focus:bg-primary focus:text-black focus:px-4 focus:py-2 focus:rounded-lg focus:font-semibold">Skip
+        to Content</a>
+
+    <!-- ═══════════════════════════════════════════
+         MAIN CONTENT
+         ═══════════════════════════════════════════ -->
+    <main id="main-content">
+
+        <!-- ─── HERO SECTION ─── -->
+        <section class="hero" id="hero">
+            <!-- Background Video -->
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="./assets/honeybanner.mp4" type="video/mp4">
+            </video>
+
+            <!-- Dark Overlay -->
+            <div class="overlay"></div>
+
+            <!-- Floating Hexagons -->
+            <svg class="hero-float-hex" style="top:15%; right:10%; width:80px;" viewBox="0 0 100 100" fill="none">
+                <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0Z" fill="#F4B400" fill-opacity="0.15" stroke="#F4B400"
+                    stroke-width="1" />
+            </svg>
+            <svg class="hero-float-hex" style="bottom:20%; right:25%; width:50px;" viewBox="0 0 100 100" fill="none">
+                <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0Z" fill="#FFD54F" fill-opacity="0.1" stroke="#FFD54F"
+                    stroke-width="1" />
+            </svg>
+            <svg class="hero-float-hex" style="top:40%; left:3%; width:60px;" viewBox="0 0 100 100" fill="none">
+                <path d="M50 0L93.3 25V75L50 100L6.7 75V25L50 0Z" fill="#F4B400" fill-opacity="0.1" stroke="#D97706"
+                    stroke-width="1" />
+            </svg>
+
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <span class="small-title">🍯 100% PURE & RAW SUNDARBAN HONEY</span>
+                <h1>SUNDARBAN<br> PURE HONEY</h1>
+                <p>
+                    Harvested directly from trusted beekeepers in Sundarban forest. Taste the raw, nutrient-rich
+                    sweetness of nature in every spoonful.
+                </p>
+                <div class="buttons">
+                    <a href="shop.html" class="btn">
+                        <i class="fas fa-shopping-bag"></i> Shop Now
+                    </a>
+                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20honey%20from%20Sundarban%20Pure%20Honey."
+                        class="btn-outline" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Bottom Info -->
+            <div class="bottom">
+                <div>EST. 2024</div>
+                <div>Raw • Organic • Unfiltered</div>
+                <div>Free Shipping</div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 2: FEATURED CATEGORIES ─── -->
+        <section class="section" id="categories">
+            <div class="honeycomb-overlay"></div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">🍯 Our Collection</div>
+                    <h2 class="section-title">Explore Our <span class="highlight">Honey Categories</span></h2>
+                    <p class="section-subtitle">Discover the finest selection of pure, natural honey sourced directly
+                        from the heart of Sundarban forest.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="category-card reveal">
+                        <div class="category-icon">🌿</div>
+                        <h3>Wild Honey</h3>
+                        <p>Raw honey from deep Sundarban forests, collected by traditional methods.</p>
+                    </div>
+                    <div class="category-card reveal">
+                        <div class="category-icon">🌸</div>
+                        <h3>Natural Honey</h3>
+                        <p>Pure multiflora honey with rich aroma and authentic golden color.</p>
+                    </div>
+                    <div class="category-card reveal">
+                        <div class="category-icon">🍃</div>
+                        <h3>Organic Honey</h3>
+                        <p>Certified organic honey, free from pesticides and artificial additives.</p>
+                    </div>
+                    <div class="category-card reveal">
+                        <div class="category-icon">🎁</div>
+                        <h3>Gift Packs</h3>
+                        <p>Premium honey gift sets, perfect for festivals and special occasions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 3: OUR PRODUCTS ─── -->
+        <section class="section section-alt" id="products">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">✨ Premium Quality</div>
+                    <h2 class="section-title">Our <span class="highlight">Products</span></h2>
+                    <p class="section-subtitle">Handpicked, lab-tested, and packaged with care. Every jar is a promise
+                        of purity.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid">
+
+                    <!-- Product 1 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/1Lhoney.jpeg" alt="Sundarban Pure Honey 1kg" loading="lazy">
+                            <span class="product-badge badge-best">Bestseller</span>
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="0">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sundarban Pure Honey</h3>
+                            <p class="product-desc">100% raw, unprocessed honey from the mangrove forests of Sundarban.
+                                Rich in enzymes and antioxidants.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star-half-alt star"></i>
+                                <span class="count">(128)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹699 <span class="old-price">₹899</span></div>
+                                <span class="product-weight">1 kg</span>
+                            </div>
+                            <div class="product-stock in-stock"><i class="fas fa-check-circle"></i> In Stock</div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(1kg)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(1kg)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/500mlhoney.jpeg" alt="Sundarban Pure Honey 500g" loading="lazy">
+                            <span class="product-badge badge-sale">20% Off</span>
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="1">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sundarban Pure Honey</h3>
+                            <p class="product-desc">Medium jar of pure golden honey. Perfect for daily use, cooking, and
+                                natural remedies.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star empty"></i>
+                                <span class="count">(95)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹399 <span class="old-price">₹499</span></div>
+                                <span class="product-weight">500g</span>
+                            </div>
+                            <div class="product-stock in-stock"><i class="fas fa-check-circle"></i> In Stock</div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(500g)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(500g)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/250mlhoney.jpeg" alt="Sundarban Pure Honey 250g" loading="lazy">
+                            <span class="product-badge badge-new">New</span>
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="2">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Sundarban Pure Honey</h3>
+                            <p class="product-desc">Compact jar ideal for trial, gifting, or personal use. Same premium
+                                quality in a smaller size.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <span class="count">(72)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹249</div>
+                                <span class="product-weight">250g</span>
+                            </div>
+                            <div class="product-stock in-stock"><i class="fas fa-check-circle"></i> In Stock</div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(250g)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(250g)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/1Lhoney.jpeg" alt="Wild Forest Honey 1kg" loading="lazy">
+                            <span class="product-badge badge-best">Popular</span>
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="3">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wild Forest Honey</h3>
+                            <p class="product-desc">Collected from the deepest parts of Sundarban mangrove forest. Bold,
+                                earthy flavor profile.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star-half-alt star"></i>
+                                <span class="count">(86)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹799 <span class="old-price">₹999</span></div>
+                                <span class="product-weight">1 kg</span>
+                            </div>
+                            <div class="product-stock in-stock"><i class="fas fa-check-circle"></i> In Stock</div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Wild%20Forest%20Honey%20(1kg)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Wild%20Forest%20Honey%20(1kg)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/500mlhoney.jpeg" alt="Organic Raw Honey 500g" loading="lazy">
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="4">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Organic Raw Honey</h3>
+                            <p class="product-desc">Certified organic, unheated, and unfiltered. Retains all natural
+                                enzymes and nutrients.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="far fa-star star empty"></i>
+                                <span class="count">(64)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹449</div>
+                                <span class="product-weight">500g</span>
+                            </div>
+                            <div class="product-stock in-stock"><i class="fas fa-check-circle"></i> In Stock</div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Organic%20Raw%20Honey%20(500g)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Organic%20Raw%20Honey%20(500g)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card reveal">
+                        <div class="product-image-wrap">
+                            <img src="./assets/250mlhoney.jpeg" alt="Honey Gift Pack" loading="lazy">
+                            <span class="product-badge badge-sale">Gift</span>
+                            <button class="product-wishlist" aria-label="Add to Wishlist"><i
+                                    class="far fa-heart"></i></button>
+                            <button class="product-quick-view" data-product="5">Quick View</button>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name">Honey Gift Pack</h3>
+                            <p class="product-desc">A beautifully packaged set of 3 mini honey jars. Perfect gift for
+                                festivals and celebrations.</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <i class="fas fa-star star"></i>
+                                <span class="count">(43)</span>
+                            </div>
+                            <div class="product-meta">
+                                <div class="product-price">₹999 <span class="old-price">₹1299</span></div>
+                                <span class="product-weight">3 × 250g</span>
+                            </div>
+                            <div class="product-stock low-stock"><i class="fas fa-exclamation-circle"></i> Only 5 Left
+                            </div>
+                            <div class="product-actions">
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Honey%20Gift%20Pack%20(3x250g)%20from%20Sundarban%20Pure%20Honey.%20Please%20provide%20delivery%20details."
+                                    class="btn-whatsapp" target="_blank" rel="noopener">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                                <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Honey%20Gift%20Pack%20(3x250g)%20from%20Sundarban%20Pure%20Honey."
+                                    class="btn-buy" target="_blank" rel="noopener">
+                                    <i class="fas fa-shopping-bag"></i> Buy Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-10 reveal">
+                    <a href="shop.html" class="btn">View All Products <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 4: BEST SELLERS SLIDER (COMPACT CAROUSEL) ─── -->
+        <section class="section" id="bestsellers">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">🔥 Most Loved</div>
+                    <h2 class="section-title">Best <span class="highlight">Selling</span> Products</h2>
+                    <p class="section-subtitle">Our customers' favorites — the most ordered products from Sundarban Pure
+                        Honey.</p>
+                </div>
+
+                <div class="bestseller-slider reveal">
+                    <div class="bestseller-track" id="bestsellerTrack">
+                        <!-- Card 1 -->
+                        <div class="product-card">
+                            <div class="product-image-wrap">
+                                <img src="./assets/1Lhoney.jpeg" alt="Best Seller - 1kg Honey" loading="lazy">
+                                <span class="product-badge badge-best">#1 Bestseller</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sundarban Pure Honey</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star-half-alt star"></i>
+                                    <span class="count">(128)</span>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="product-price">₹699</div>
+                                    <span class="product-weight">1 kg</span>
+                                </div>
+                                <div class="product-actions mt-2">
+                                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(1kg)."
+                                        class="btn-whatsapp" target="_blank" rel="noopener"><i
+                                            class="fab fa-whatsapp"></i> Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="product-card">
+                            <div class="product-image-wrap">
+                                <img src="./assets/500mlhoney.jpeg" alt="Best Seller - 500g Honey" loading="lazy">
+                                <span class="product-badge badge-best">#2 Bestseller</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sundarban Pure Honey</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="far fa-star star empty"></i>
+                                    <span class="count">(95)</span>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="product-price">₹399</div>
+                                    <span class="product-weight">500g</span>
+                                </div>
+                                <div class="product-actions mt-2">
+                                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(500g)."
+                                        class="btn-whatsapp" target="_blank" rel="noopener"><i
+                                            class="fab fa-whatsapp"></i> Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="product-card">
+                            <div class="product-image-wrap">
+                                <img src="./assets/1Lhoney.jpeg" alt="Wild Forest Honey" loading="lazy">
+                                <span class="product-badge badge-best">#3 Bestseller</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Wild Forest Honey</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star-half-alt star"></i>
+                                    <span class="count">(86)</span>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="product-price">₹799</div>
+                                    <span class="product-weight">1 kg</span>
+                                </div>
+                                <div class="product-actions mt-2">
+                                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Wild%20Forest%20Honey%20(1kg)."
+                                        class="btn-whatsapp" target="_blank" rel="noopener"><i
+                                            class="fab fa-whatsapp"></i> Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="product-card">
+                            <div class="product-image-wrap">
+                                <img src="./assets/250mlhoney.jpeg" alt="Honey Gift Pack" loading="lazy">
+                                <span class="product-badge badge-sale">Gift</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Honey Gift Pack</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i>
+                                    <span class="count">(43)</span>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="product-price">₹999</div>
+                                    <span class="product-weight">3×250g</span>
+                                </div>
+                                <div class="product-actions mt-2">
+                                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Honey%20Gift%20Pack%20(3x250g)."
+                                        class="btn-whatsapp" target="_blank" rel="noopener"><i
+                                            class="fab fa-whatsapp"></i> Order</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="product-card">
+                            <div class="product-image-wrap">
+                                <img src="./assets/250mlhoney.jpeg" alt="Sundarban Pure Honey 250g" loading="lazy">
+                                <span class="product-badge badge-new">New</span>
+                            </div>
+                            <div class="product-info">
+                                <h3 class="product-name">Sundarban Pure Honey</h3>
+                                <div class="product-rating">
+                                    <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                        class="fas fa-star star"></i>
+                                    <span class="count">(72)</span>
+                                </div>
+                                <div class="product-meta">
+                                    <div class="product-price">₹249</div>
+                                    <span class="product-weight">250g</span>
+                                </div>
+                                <div class="product-actions mt-2">
+                                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20Sundarban%20Pure%20Honey%20(250g)."
+                                        class="btn-whatsapp" target="_blank" rel="noopener"><i
+                                            class="fab fa-whatsapp"></i> Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-nav reveal">
+                    <button class="slider-btn" id="bsPrev" aria-label="Previous Slide"><i
+                            class="fas fa-chevron-left"></i></button>
+                    <button class="slider-btn" id="bsNext" aria-label="Next Slide"><i
+                            class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 5: WHY CHOOSE US ─── -->
+        <section class="section section-alt" id="whyChooseUs">
+            <div class="honeycomb-overlay"></div>
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">💎 Our Promise</div>
+                    <h2 class="section-title">Why Choose <span class="highlight">Us?</span></h2>
+                    <p class="section-subtitle">We're not just selling honey — we're delivering trust, purity, and the
+                        essence of Sundarban.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>100% Natural</h3>
+                        <p>Absolutely pure honey with no added sugar, colors, or preservatives.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-flask"></i></div>
+                        <h3>No Chemicals</h3>
+                        <p>Zero pesticides, zero antibiotics. Lab tested for quality assurance.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-seedling"></i></div>
+                        <h3>Fresh Collection</h3>
+                        <p>Harvested fresh from hives and delivered within days to your doorstep.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3>Direct From Sundarban</h3>
+                        <p>Sourced directly from traditional beekeepers of the Sundarban delta.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                        <h3>Fast Delivery</h3>
+                        <p>Quick and safe delivery across India with real-time tracking.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-award"></i></div>
+                        <h3>Premium Quality</h3>
+                        <p>Every jar meets the highest standards of purity and taste.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-tags"></i></div>
+                        <h3>Affordable Price</h3>
+                        <p>Premium quality at fair prices, because nature's goodness should be accessible.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                        <h3>Trusted by Thousands</h3>
+                        <p>Over 5,000+ happy customers trust Sundarban Pure Honey for their daily needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 6: COLLECTION PROCESS TIMELINE ─── -->
+        <section class="section" id="process">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">🐝 Our Process</div>
+                    <h2 class="section-title">How We <span class="highlight">Collect</span> Honey</h2>
+                    <p class="section-subtitle">From deep Sundarban forests to your home — a journey of purity and care
+                        at every step.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-step">Step 1</span>
+                            <h3>🌳 Collection</h3>
+                            <p>Our experienced beekeepers carefully collect raw honeycomb from natural bee hives deep
+                                within the Sundarban mangrove forests using traditional, bee-friendly methods.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-step">Step 2</span>
+                            <h3>🔬 Filtering</h3>
+                            <p>The raw honey is gently filtered using fine mesh cloth to remove beeswax and debris while
+                                preserving all natural enzymes, pollen, and nutritional value.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-step">Step 3</span>
+                            <h3>📦 Packaging</h3>
+                            <p>Each jar is carefully filled, sealed, and labeled in our hygienic facility. We use
+                                food-grade glass and BPA-free containers to maintain freshness.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-step">Step 4</span>
+                            <h3>🚚 Delivery</h3>
+                            <p>Your honey is securely packed and shipped directly to your doorstep through our trusted
+                                delivery partners. Track your order in real-time via WhatsApp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 7: STATISTICS ─── -->
+        <section class="stats-section" id="stats">
+            <div class="honeycomb-overlay" style="opacity:0.05;"></div>
+            <div class="container">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-target="5000">0</div>
+                        <div class="stat-label">Happy Customers</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-target="12000">0</div>
+                        <div class="stat-label">Jars Delivered</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% Pure Honey</div>
+                    </div>
+                    <div class="stat-card reveal">
+                        <div class="stat-number" data-target="15">0</div>
+                        <div class="stat-label">Years of Trust</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 8: TESTIMONIALS ─── -->
+        <section class="section" id="testimonials">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-badge">⭐ Reviews</div>
+                    <h2 class="section-title">What Our <span class="highlight">Customers</span> Say</h2>
+                    <p class="section-subtitle">Real reviews from real honey lovers across India.</p>
+                </div>
+
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track" id="testimonialTrack">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i>
+                                    </div>
+                                    <p class="testimonial-text">The best honey I've ever tasted! Pure, raw, and you can
+                                        tell it's straight from nature. My whole family loves it. Will keep ordering!
+                                    </p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">R</div>
+                                        <div>
+                                            <div class="testimonial-name">Rajesh Kumar</div>
+                                            <div class="testimonial-location">Kolkata, West Bengal</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star-half-alt star"></i>
+                                    </div>
+                                    <p class="testimonial-text">I was skeptical at first, but this honey is absolutely
+                                        genuine. The thick consistency and natural flavor are proof of its purity.
+                                        Highly recommended!</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">P</div>
+                                        <div>
+                                            <div class="testimonial-name">Priya Sharma</div>
+                                            <div class="testimonial-location">Delhi, India</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i>
+                                    </div>
+                                    <p class="testimonial-text">Ordered the gift pack for Diwali and everyone loved it.
+                                        The packaging is premium and the honey tastes incredible. Worth every rupee!</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">A</div>
+                                        <div>
+                                            <div class="testimonial-name">Arjun Patel</div>
+                                            <div class="testimonial-location">Mumbai, Maharashtra</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i>
+                                    </div>
+                                    <p class="testimonial-text">Been using this honey for my morning warm water routine.
+                                        My immunity has improved noticeably. Thank you Sundarban Pure Honey team!</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">S</div>
+                                        <div>
+                                            <div class="testimonial-name">Sneha Roy</div>
+                                            <div class="testimonial-location">Bangalore, Karnataka</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star-half-alt star"></i>
+                                    </div>
+                                    <p class="testimonial-text">Fast delivery and excellent quality. This honey
+                                        crystallizes naturally which proves it's the real deal. My go-to brand now!</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">M</div>
+                                        <div>
+                                            <div class="testimonial-name">Mohammed Ali</div>
+                                            <div class="testimonial-location">Hyderabad, Telangana</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial-card">
+                                    <div class="testimonial-quote">"</div>
+                                    <div class="product-rating mb-3">
+                                        <i class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i><i class="fas fa-star star"></i><i
+                                            class="fas fa-star star"></i>
+                                    </div>
+                                    <p class="testimonial-text">Incredible quality at such affordable prices. The wild
+                                        forest honey is something else entirely — deep, complex, and authentic.</p>
+                                    <div class="testimonial-author">
+                                        <div class="testimonial-avatar">D</div>
+                                        <div>
+                                            <div class="testimonial-name">Deepa Nair</div>
+                                            <div class="testimonial-location">Chennai, Tamil Nadu</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider-dots" id="testimonialDots">
+                    <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+                    <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 9: FAQ ─── -->
+        <section class="section section-alt" id="faq">
+            <div class="container max-w-3xl">
+                <div class="section-header reveal">
+                    <div class="section-badge">❓ FAQ</div>
+                    <h2 class="section-title">Frequently Asked <span class="highlight">Questions</span></h2>
+                    <p class="section-subtitle">Got questions? We've got answers.</p>
+                </div>
+
+                <div class="space-y-3 reveal" id="faqContainer">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Is your honey 100% pure and natural?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes, absolutely! Our honey is 100% pure, raw, and unprocessed.
+                                We never add sugar, artificial flavors, or preservatives. Each batch is lab-tested to
+                                ensure the highest quality standards.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Where is your honey sourced from?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Our honey is sourced directly from the Sundarban mangrove
+                                forests in West Bengal, India. Our trusted beekeepers use traditional, bee-friendly
+                                methods to collect raw honeycomb from natural hives.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            How do I place an order?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">You can place an order easily through WhatsApp! Simply click
+                                any "Order on WhatsApp" button on our website, and you'll be connected directly with us.
+                                You can also call us at 9564846891.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Do you deliver across India?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Yes, we deliver across India! We partner with trusted courier
+                                services to ensure your honey reaches you safely and on time. Delivery typically takes
+                                3-7 business days depending on your location.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            Why does honey crystallize? Is it still good?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">Crystallization is a natural process and actually a sign of
+                                pure, raw honey! It doesn't affect quality or taste. Simply place the jar in warm water
+                                for a few minutes to restore its liquid form.</div>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            What payment methods do you accept?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div class="faq-answer-inner">We accept UPI (Google Pay, PhonePe, Paytm), bank transfer, and
+                                cash on delivery (COD) for select locations. Payment details are shared when you place
+                                your order via WhatsApp.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 10: CTA BANNER ─── -->
+        <section class="cta-section" id="cta">
+            <div class="honeycomb-overlay"></div>
+            <div class="container text-center relative z-10">
+                <h2 class="reveal">Order Your Jar of Pure Goodness Today!</h2>
+                <p class="reveal">Experience the authentic taste of Sundarban. Fresh, raw, and delivered with love.</p>
+                <div class="cta-buttons reveal">
+                    <a href="shop.html" class="btn-dark"><i class="fas fa-shopping-bag"></i> Shop Now</a>
+                    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20honey%20from%20Sundarban%20Pure%20Honey."
+                        class="btn-dark" target="_blank" rel="noopener" style="background:#25D366;color:white;"><i
+                            class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    <a href="contact.html" class="btn-light"><i class="fas fa-envelope"></i> Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── SECTION 11: NEWSLETTER ─── -->
+        <section class="section" id="newsletter" style="padding: 60px 0;">
+            <div class="container max-w-2xl text-center">
+                <div class="reveal">
+                    <h2 class="section-title text-2xl md:text-3xl mb-4">Stay Sweet — <span
+                            class="highlight">Subscribe</span></h2>
+                    <p class="section-subtitle mb-8">Get exclusive offers, new product launches, and honey tips
+                        delivered to your inbox.</p>
+                    <form class="newsletter-form max-w-md mx-auto"
+                        onsubmit="event.preventDefault(); alert('Thank you for subscribing! 🍯');">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email Address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="reveal">
+                    <div class="footer-brand">
+                        <img src="./assets/HP_Logo1.png" alt="Honey Point Logo">
+                        Honey Point
+                    </div>
+                    <p class="footer-about">We bring you the purest, raw, unprocessed honey directly from the heart of
+                        Sundarban forests. Every jar is a promise of nature's golden goodness.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/919564846891" aria-label="WhatsApp" target="_blank" rel="noopener"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="reveal">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right text-xs"></i> Home</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right text-xs"></i> About Us</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Shop</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right text-xs"></i> Contact</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right text-xs"></i> FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Products -->
+                <div class="reveal">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Pure Honey 1kg</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Pure Honey 500g</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Pure Honey 250g</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Wild Forest Honey</a></li>
+                        <li><a href="shop.html"><i class="fas fa-chevron-right text-xs"></i> Gift Packs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="reveal">
+                    <h4 class="footer-heading">Contact Us</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Sundarban, Gosaba, 743370</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919564846891" style="color:inherit;">+91
+                                9564846891</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:honeypoint26@gmail.com"
+                                style="color:inherit;">honeypoint26@gmail.com</a></li>
+                        <li><i class="fas fa-clock"></i> Mon–Sat: 9:00 AM – 7:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Honey Point. All rights reserved. Design and develop by Tufan</p>
+                <div class="footer-bottom-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms-of-service.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════
+         QUICK VIEW MODAL
+         ═══════════════════════════════════════════ -->
+    <div class="modal-overlay" id="quickViewModal">
+        <div class="modal-content" id="modalContent">
+            <button class="modal-close" id="modalClose" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+            <div class="modal-image">
+                <img id="modalImage" src="" alt="Product Image">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalName"></h2>
+                <div class="product-rating" id="modalRating"></div>
+                <div class="product-price" id="modalPrice"></div>
+                <p class="product-desc" id="modalDesc"></p>
+                <div class="product-stock in-stock" id="modalStock"></div>
+                <div class="product-actions">
+                    <a id="modalWhatsApp" href="#" class="btn-whatsapp" target="_blank" rel="noopener"><i
+                            class="fab fa-whatsapp"></i> Order on WhatsApp</a>
+                    <a id="modalBuy" href="#" class="btn-buy" target="_blank" rel="noopener"><i
+                            class="fas fa-shopping-bag"></i> Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <a href="https://wa.me/919564846891?text=Hello%2C%20I%20want%20to%20order%20honey%20from%20Sundarban%20Pure%20Honey."
+        class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
